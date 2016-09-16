@@ -114,6 +114,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Menu Principal.resx">
       <DependentUpon>Menu Principal.vb</DependentUpon>
     </EmbeddedResource>
