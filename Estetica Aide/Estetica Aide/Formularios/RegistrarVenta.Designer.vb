@@ -162,7 +162,7 @@ Partial Class RegistrarVenta
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DESCRIPCION, Me.CANTIDAD, Me.MONTO})
         Me.DataGridView1.Location = New System.Drawing.Point(33, 193)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(343, 47)
+        Me.DataGridView1.Size = New System.Drawing.Size(343, 45)
         Me.DataGridView1.TabIndex = 13
         '
         'DESCRIPCION
