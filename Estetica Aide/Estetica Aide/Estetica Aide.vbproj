@@ -78,6 +78,18 @@
     <Compile Include="Formularios\Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\RegistrarGastos.Designer.vb">
       <DependentUpon>RegistrarGastos.vb</DependentUpon>
     </Compile>
@@ -126,6 +138,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistrarGastos.resx">
       <DependentUpon>RegistrarGastos.vb</DependentUpon>
     </EmbeddedResource>
