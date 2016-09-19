@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\RegistrarGastos.Designer.vb">
       <DependentUpon>RegistrarGastos.vb</DependentUpon>
     </Compile>
