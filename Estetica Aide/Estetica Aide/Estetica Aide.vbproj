@@ -87,6 +87,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Actualizar Inventario.Designer.vb">
+      <DependentUpon>Actualizar Inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Actualizar Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Fernando\Agenda.Designer.vb">
       <DependentUpon>Agenda.vb</DependentUpon>
     </Compile>
@@ -177,6 +189,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Actualizar Inventario.resx">
+      <DependentUpon>Actualizar Inventario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Fernando\Agenda.resx">
       <DependentUpon>Agenda.vb</DependentUpon>
     </EmbeddedResource>

@@ -23,6 +23,8 @@ Partial Class Agenda
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.NumCliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,8 +40,26 @@ Partial Class Agenda
         Me.DataGridView1.Location = New System.Drawing.Point(42, 37)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(750, 361)
+        Me.DataGridView1.Size = New System.Drawing.Size(750, 319)
         Me.DataGridView1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(456, 383)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(165, 41)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Nueva Cita"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(627, 383)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(165, 41)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Eliminar"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'NumCliente
         '
@@ -61,13 +81,13 @@ Partial Class Agenda
         '
         'Tratamiento
         '
-        Me.Tratamiento.HeaderText = "Column1"
+        Me.Tratamiento.HeaderText = "Tratamiento"
         Me.Tratamiento.Name = "Tratamiento"
         Me.Tratamiento.ReadOnly = True
         '
         'Restricciones
         '
-        Me.Restricciones.HeaderText = "Column1"
+        Me.Restricciones.HeaderText = "Restricciones"
         Me.Restricciones.Name = "Restricciones"
         Me.Restricciones.ReadOnly = True
         '
@@ -75,7 +95,9 @@ Partial Class Agenda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(835, 459)
+        Me.ClientSize = New System.Drawing.Size(836, 446)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Agenda"
         Me.Text = "Agenda"
@@ -85,9 +107,11 @@ Partial Class Agenda
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Button1 As Button
     Friend WithEvents NumCliente As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Fecha As DataGridViewTextBoxColumn
     Friend WithEvents Tratamiento As DataGridViewTextBoxColumn
     Friend WithEvents Restricciones As DataGridViewTextBoxColumn
+    Friend WithEvents Button2 As Button
 End Class
